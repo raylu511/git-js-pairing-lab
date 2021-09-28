@@ -38,3 +38,15 @@ function multiply(firstNum, secondNum){
 // console.log(multiply(2,4));    8
 // console.log(multiply(10,-5));  -50
 // console.log(multiply(3,7.5));  22.5
+
+function add(Num1,Num2){
+    if(Num1===Num2) {
+        return ((Num1+Num2)*3)
+        
+    }
+    
+    return Num1+Num2;
+    
+    
+}
+console.log(add(6,6))
