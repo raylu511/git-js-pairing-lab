@@ -23,12 +23,18 @@ function multiplesOfThreeOrFive(){
 }
 
 // multiplesOfThreeOrFive();
-//multiplesOfThree()
-
 
 function untilNum(int){
     for(let i=1; i<=int; i++) 
     console.log(i)
     
 }
-untilNum(42)
+// untilNum(42)
+
+function multiply(firstNum, secondNum){
+    return firstNum*secondNum;
+}
+
+// console.log(multiply(2,4));    8
+// console.log(multiply(10,-5));  -50
+// console.log(multiply(3,7.5));  22.5
