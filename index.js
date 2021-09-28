@@ -86,23 +86,14 @@ function printTime(){
 
 // printTime(); //Prints the current time in HH/MM/ss format
 
-
-// if year%4!==0 
-//      go to 
 function isLeapYear(year){
-   
-   if(!Number.isInteger(year/4)){
-       return false
-   }if(!Number.isInteger(year/100)){
-       return false
-   }if(!Number.isInteger(year/400)){
-       return false
-   }
-   else return true 
-   
-
+    if((year%4==0) && (year%100!=0) || (year%400==0)){ return true;}
+    return false;
     
     
 }
 
-console.log(isLeapYear(2020))
+// console.log(isLeapYear(2000)); // true 
+// console.log(isLeapYear(1900)); // false
+// console.log(isLeapYear(2020)); //true
+// console.log(isLeapYear(1999)); //false
