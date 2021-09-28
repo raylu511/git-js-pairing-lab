@@ -115,38 +115,60 @@ function switchLetters(word){
     return reversedWord;
 }
 
-
+// 16
+function changeString(word){
+     const alphabetArray = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'] ; 
+     
+     // Create alphabetMap
+     const alphabetMap = new Map();
+     for(let i=0;i<alphabetArray.length; i++){
+         alphabetMap.set(alphabetArray[i], i);
+     }
+     // Create return string
+     let changeWord = "";
+     
+     //abc => bcd
+     
+     //Hashed the alphabet to utilize map's constant lookup time
+     
+     for(let i=0; i<word.length;i++){
+         changeWord+=alphabetArray[alphabetMap.get(word[i])+1]
+     }
+    return changeWord;
+}
 
 
 
 // multiplesOfThree();
 // multiplesOfThreeOrFive();
-// untilNum(42) 
-// console.log(multiply(2,4));    8
-// console.log(multiply(10,-5));  -50
-// console.log(multiply(3,7.5));  22.5
-// console.log(add(6,6)); // 36
-// console.log(isNegative(3)); //false
-// console.log(isNegative(-2)) //true
-// console.log(isNegative(Math.PI)) //false
-// console.log(triangleArea(6,8)) // 24
-// console.log(betweenTwentyAndFourty(4)) //false 
-// console.log(betweenTwentyAndFourty(21)) //true
-// console.log(betweenTwentyAndFourty(99)) //true
-// console.log(betweenTwentyAndFourty(101)) //false
-// console.log(largest(41,108,86)) // 108
-// printTime(); //Prints the current time in HH/MM/ss format
-// console.log(isLeapYear(2000)); // true 
-// console.log(isLeapYear(1900)); // false
-// console.log(isLeapYear(2020)); //true
-// console.log(isLeapYear(1999)); //false
-// console.log(getExtention("hello.txt")) //.txt
-// console.log(getExtention("app.js"))    //.js
-// console.log(getExtention("README.md")) //.md
-// console.log(absoluteNinetenn(5));  //14
-// console.log(absoluteNinetenn(20)); //3
-// console.log(absoluteNinetenn(50)); //93
-// console.log(switchLetters("anne"))        //return "enna"
+// untilNum(42)                 
+// console.log(multiply(2,4));                //8
+// console.log(multiply(10,-5));              //-50
+// console.log(multiply(3,7.5));              //22.5
+// console.log(add(6,6));                     //36
+// console.log(isNegative(3));                //false
+// console.log(isNegative(-2))                //true
+// console.log(isNegative(Math.PI))           //false
+// console.log(triangleArea(6,8))             // 24
+// console.log(betweenTwentyAndFourty(4))     //false 
+// console.log(betweenTwentyAndFourty(21))    //true
+// console.log(betweenTwentyAndFourty(99))    //true
+// console.log(betweenTwentyAndFourty(101))   //false
+// console.log(largest(41,108,86))            // 108
+// printTime();                               //Prints the current time in HH/MM/ss format
+// console.log(isLeapYear(2000));             // true 
+// console.log(isLeapYear(1900));             // false
+// console.log(isLeapYear(2020));             //true
+// console.log(isLeapYear(1999));             //false
+// console.log(getExtention("hello.txt"))     //.txt
+// console.log(getExtention("app.js"))        //.js
+// console.log(getExtention("README.md"))     //.md
+// console.log(absoluteNinetenn(5));          //14
+// console.log(absoluteNinetenn(20));         //3
+// console.log(absoluteNinetenn(50));         //93
+// console.log(switchLetters("anne"))         //return "enna"
 // console.log(switchLetters("hello world"))  //return "dello worlh"
 // console.log(switchLetters("a"))            //return "a"
 // console.log(switchLetters(""))             //return ""
+// console.log(changeString('abc'));          // return bcd
+// console.log(changeString("helloworld"));   //return "ifmmpxpsme"
