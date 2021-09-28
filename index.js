@@ -42,11 +42,15 @@ function multiply(firstNum, secondNum){
 function add(Num1,Num2){
     if(Num1===Num2) {
         return ((Num1+Num2)*3)
-        
     }
-    
     return Num1+Num2;
-    
-    
 }
-console.log(add(6,6))
+// console.log(add(6,6)); // 36
+
+function isNegative(number){
+    if(number<0) return true;
+    return false;
+}
+// console.log(isNegative(3)); //false
+// console.log(isNegative(-2)) //true
+// console.log(isNegative(Math.PI)) //false
