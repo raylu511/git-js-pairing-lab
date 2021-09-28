@@ -89,3 +89,20 @@ function printTime(){
 
 // if year%4!==0 
 //      go to 
+function isLeapYear(year){
+   
+   if(!Number.isInteger(year/4)){
+       return false
+   }if(!Number.isInteger(year/100)){
+       return false
+   }if(!Number.isInteger(year/400)){
+       return false
+   }
+   else return true 
+   
+
+    
+    
+}
+
+console.log(isLeapYear(2020))
