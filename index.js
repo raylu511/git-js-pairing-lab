@@ -84,6 +84,15 @@ function getExtention(file){
     return "." + filename[1]
 }
 
+// 14
+function absoluteNinetenn (number){
+    let absoluteNumber = number-19;
+    if(absoluteNumber<0){absoluteNumber*=(-1);}
+      if(number>19){
+        return absoluteNumber*3;
+     }
+     return absoluteNumber;
+}
 
 
 // multiplesOfThree();
@@ -110,3 +119,6 @@ function getExtention(file){
 // console.log(getExtention("hello.txt")) //.txt
 // console.log(getExtention("app.js"))    //.js
 // console.log(getExtention("README.md")) //.md
+// console.log(absoluteNinetenn(5));  //14
+// console.log(absoluteNinetenn(20)); //3
+// console.log(absoluteNinetenn(50)); //93
