@@ -54,3 +54,9 @@ function isNegative(number){
 // console.log(isNegative(3)); //false
 // console.log(isNegative(-2)) //true
 // console.log(isNegative(Math.PI)) //false
+function triangleArea(h,b){
+    return h*b/2
+}
+console.log(triangleArea(6,8))
+    //returns 17.5
+   //returns 24)
