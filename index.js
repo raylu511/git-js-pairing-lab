@@ -74,8 +74,15 @@ function betweenTwentyAndFourty(number){
 // console.log(betweenTwentyAndFourty(101)) //false
 
 function largest(Num1,Num2,Num3){
-    
-    
     return Math.max(Num1,Num2,Num3)
 }
-console.log(largest(41,108,86))
+
+// console.log(largest(41,108,86)) // 108
+
+function printTime(){
+    let d = new Date();
+    console.log(d.toLocaleTimeString());
+}
+
+// printTime(); //Prints the current time in HH/MM/ss format
+
