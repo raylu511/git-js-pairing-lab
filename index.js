@@ -72,3 +72,10 @@ function betweenTwentyAndFourty(number){
 // console.log(betweenTwentyAndFourty(21)) //true
 // console.log(betweenTwentyAndFourty(99)) //true
 // console.log(betweenTwentyAndFourty(101)) //false
+
+function largest(Num1,Num2,Num3){
+    
+    
+    return Math.max(Num1,Num2,Num3)
+}
+console.log(largest(41,108,86))
