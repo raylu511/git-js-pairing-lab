@@ -86,3 +86,6 @@ function printTime(){
 
 // printTime(); //Prints the current time in HH/MM/ss format
 
+
+// if year%4!==0 
+//      go to 
