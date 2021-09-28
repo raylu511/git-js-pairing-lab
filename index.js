@@ -94,6 +94,30 @@ function absoluteNinetenn (number){
      return absoluteNumber;
 }
 
+// 15
+function switchLetters(word){
+    let reversedWord = "";
+    
+    //Reverse string
+    for(let i=word.length-1; i>=0; i--){
+        reversedWord+=word[i];
+        }
+    
+    //If string has multiple words
+        //Split into array
+        //Reverse array
+        //Join array 
+    if(reversedWord.includes(" ")){
+        let reversedWordArray = reversedWord.split(" ");
+        reversedWordArray.reverse();        
+        reversedWord = reversedWordArray.join(" ");
+    }
+    return reversedWord;
+}
+
+
+
+
 
 // multiplesOfThree();
 // multiplesOfThreeOrFive();
@@ -122,3 +146,7 @@ function absoluteNinetenn (number){
 // console.log(absoluteNinetenn(5));  //14
 // console.log(absoluteNinetenn(20)); //3
 // console.log(absoluteNinetenn(50)); //93
+// console.log(switchLetters("anne"))        //return "enna"
+// console.log(switchLetters("hello world"))  //return "dello worlh"
+// console.log(switchLetters("a"))            //return "a"
+// console.log(switchLetters(""))             //return ""
